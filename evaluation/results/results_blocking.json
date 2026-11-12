@@ -1,0 +1,78 @@
+{
+  "mode": "blocking",
+  "tc1_h1": {
+    "mode": "normal",
+    "attempts": 5,
+    "success": 5,
+    "failed": 0,
+    "avg_latency_ms": 15.31,
+    "duration_s": 2.58
+  },
+  "tc1_h2": {
+    "mode": "normal",
+    "attempts": 3,
+    "success": 3,
+    "failed": 0,
+    "avg_latency_ms": 9.02,
+    "duration_s": 1.53
+  },
+  "tc2_h3": {
+    "mode": "abnormal",
+    "attempts": 50,
+    "success": 20,
+    "failed": 30,
+    "avg_latency_ms": 11.35,
+    "duration_s": 32.8
+  },
+  "detection_delay_s": 1.235,
+  "block_latency_ms": 2.73,
+  "tc3_h3_again": {
+    "mode": "normal",
+    "attempts": 3,
+    "success": 0,
+    "failed": 3,
+    "avg_latency_ms": null,
+    "duration_s": 3.91
+  },
+  "tc3_h1_still_ok": {
+    "mode": "normal",
+    "attempts": 3,
+    "success": 3,
+    "failed": 0,
+    "avg_latency_ms": 10.84,
+    "duration_s": 0.93
+  },
+  "drop_rule_present": true,
+  "tc4_h1_under_attack": {
+    "mode": "normal",
+    "attempts": 10,
+    "success": 10,
+    "failed": 0,
+    "avg_latency_ms": 12.58,
+    "duration_s": 5.14
+  },
+  "tc5_server_down": {
+    "mode": "normal",
+    "attempts": 2,
+    "success": 0,
+    "failed": 2,
+    "avg_latency_ms": null,
+    "duration_s": 0.62
+  },
+  "tc5_server_back": {
+    "mode": "normal",
+    "attempts": 2,
+    "success": 2,
+    "failed": 0,
+    "avg_latency_ms": 12.12,
+    "duration_s": 0.62
+  },
+  "tc6_h3_after_unblock": {
+    "mode": "normal",
+    "attempts": 3,
+    "success": 3,
+    "failed": 0,
+    "avg_latency_ms": 11.63,
+    "duration_s": 0.94
+  }
+}

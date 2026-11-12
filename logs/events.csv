@@ -1,0 +1,21 @@
+timestamp,event,ip,syn_count,detection_delay_s,block_latency_ms,details
+1794139429.488,START,,,,,threshold=20 window=10.0s block_timeout=60s blocking=ON
+1794139708.615,START,,,,,threshold=20 window=10.0s block_timeout=60s blocking=ON
+1794139829.545,SWITCH_CONNECTED,,,,,dpid=1
+1794139924.651,DETECT,10.0.0.3,21,1.232,,21 SYNs in 10.0s > threshold 20
+1794139924.652,BLOCK,10.0.0.3,21,1.232,1.00,"drop rule installed, timeout=60s"
+1794139988.841,UNBLOCK,10.0.0.3,,,,block timeout expired
+1794140289.734,SWITCH_CONNECTED,,,,,dpid=1
+1794140296.534,DETECT,10.0.0.3,21,1.235,,21 SYNs in 10.0s > threshold 20
+1794140296.538,BLOCK,10.0.0.3,21,1.235,2.73,"drop rule installed, timeout=60s"
+1794140359.048,UNBLOCK,10.0.0.3,,,,block timeout expired
+1794140360.359,DETECT,10.0.0.3,21,0.584,,21 SYNs in 10.0s > threshold 20
+1794140360.360,BLOCK,10.0.0.3,21,0.584,0.59,"drop rule installed, timeout=60s"
+1794140424.070,UNBLOCK,10.0.0.3,,,,block timeout expired
+1794140425.325,DETECT,10.0.0.3,21,0.582,,21 SYNs in 10.0s > threshold 20
+1794140425.327,BLOCK,10.0.0.3,21,0.582,1.10,"drop rule installed, timeout=60s"
+1794140489.098,UNBLOCK,10.0.0.3,,,,block timeout expired
+1794140758.626,START,,,,,threshold=20 window=10.0s block_timeout=60s blocking=OFF (baseline)
+1794140798.722,SWITCH_CONNECTED,,,,,dpid=1
+1794140805.421,DETECT,10.0.0.3,21,1.223,,21 SYNs in 10.0s > threshold 20
+1794140815.439,DETECT,10.0.0.3,208,9.955,,208 SYNs in 10.0s > threshold 20
